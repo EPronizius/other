@@ -36,3 +36,29 @@ str_count(newdata, pattern = "R")
 str_count(newdata, pattern = "Python")
 str_count(newdata, pattern = "MatLab")
 str_count(newdata, pattern = "Stata")
+
+#Q4
+myvars <- c("How do you check your own code?")
+newdata <- toString(raw_data[myvars])
+str_count(newdata, pattern = "I don't code")
+str_count(newdata, pattern = "I code, but don't check it")
+str_count(newdata, pattern = "I review it in an informal, unstructured way before sharing/submission")
+str_count(newdata, pattern = "I have a structured way to review it")
+str_count(newdata, pattern = "I use an automated workflow")
+str_count(newdata, pattern = "I have others")
+
+#Q5
+myvars <- c("Have you ever reviewed someone else’s code?")
+newdata <- toString(raw_data[myvars])
+str_count(newdata, pattern = "Yes")
+str_count(newdata, pattern = "No")
+
+#Q6
+myvars <- c("How often do you do code check for projects you are involved in?")
+newdata <- toString(raw_data[myvars])
+str_count(newdata, pattern = "Never")
+str_count(newdata, pattern = "Less than I ought to")
+str_count(newdata, pattern = "About as much as I ought to")
+str_count(newdata, pattern = "More than I ought to")
+
+
